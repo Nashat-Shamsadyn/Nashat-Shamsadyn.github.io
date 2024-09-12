@@ -1,0 +1,286 @@
+/* إعادة تعيين بعض الأنماط الافتراضية */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة التباعد الافتراضي */
+  box-sizing: border-box; /* ضمان حساب الحواف والحشو ضمن الحجم الكلي */
+}
+
+/* أنماط الشعار */
+.shahana_logo {
+  width: 110px; /* تحديد عرض الشعار */
+  height: 110px; /* تحديد ارتفاع الشعار بحيث يكون دائرياً */
+  border-radius: 50%; /* جعل الصورة دائرية */
+  object-fit: cover; /* ملء الصورة داخل المساحة بدون تشويه */
+}
+
+/* أنماط الجسم العامة */
+body {
+  font-family: "Arial", sans-serif; /* تحديد نوع الخط */
+  line-height: 1.6; /* تحديد ارتفاع السطر لتحسين القراءة */
+  color: #333; /* لون النص */
+  background-color: #f0f0f0; /* لون خلفية ناعم */
+}
+
+/* أنماط الرأس */
+header {
+  display: flex; /* استخدام Flexbox لتنظيم العناصر داخل الرأس */
+  align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  justify-content: space-between; /* توزيع العناصر بشكل متساوي مع المسافات بينهما */
+  background-color: #88b632; /* لون خلفية الرأس */
+  color: #fff; /* لون النص داخل الرأس */
+  padding: 15px 30px; /* تحديد المسافة الداخلية للرأس */
+  border-bottom: 4px solid #ffcc00; /* إضافة شريط أسفل الرأس بلون مميز */
+}
+
+header img {
+  width: 100px; /* تحديد عرض الصورة داخل الرأس */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+header ul {
+  list-style: none; /* إزالة العلامات النقطية من القوائم */
+  padding: 0; /* إزالة التباعد الداخلي للقائمة */
+  margin: 0; /* إزالة التباعد الخارجي للقائمة */
+  display: flex; /* استخدام Flexbox لتنظيم العناصر داخل القائمة */
+  gap: 20px; /* تحديد المسافة بين العناصر */
+}
+
+header li {
+  display: inline; /* عرض العناصر في نفس السطر */
+}
+
+header a {
+  color: #ffffff; /* لون النص في الروابط */
+  text-decoration: none; /* إزالة التزيين الافتراضي للروابط */
+  font-weight: bold; /* جعل النص بالخط العريض */
+  padding: 5px 10px; /* تحديد المسافة الداخلية للروابط */
+  border-radius: 5px; /* جعل زوايا الروابط مدورة */
+}
+
+header a:hover {
+  background-color: #e7e7e7; /* لون الخلفية عند التمرير على الرابط */
+  color: #8691d1; /* لون النص عند التمرير على الرابط */
+}
+
+/* لاستهداف عنصر <li> الذي يحتوي على الكلاس Name12 */
+.Name12 {
+  /* أضف هنا خصائص CSS الخاصة بك */
+  text-align: center; /* لتوسيط النص داخل العنصر */
+  font-weight: bold; /* لتوضيح النص */
+  color: #f0efef;
+  font-size: 32px;
+  /* أضف أي خصائص إضافية حسب الحاجة */
+}
+
+/* أنماط التنقل */
+nav {
+  background-color: #559153; /* لون خلفية شريط التنقل */
+  color: #fff; /* لون النص في شريط التنقل */
+  padding: 10px 20px; /* تحديد المسافة الداخلية لشريط التنقل */
+}
+
+nav ul {
+  list-style: none; /* إزالة العلامات النقطية من القوائم */
+  padding: 0; /* إزالة التباعد الداخلي للقائمة */
+  margin: 0; /* إزالة التباعد الخارجي للقائمة */
+  text-align: center; /* محاذاة النصوص في المركز */
+}
+
+nav li {
+  display: inline-block; /* عرض العناصر في نفس السطر مع دعم تأثيرات التحويل */
+  margin: 0 15px; /* تحديد المسافة بين العناصر */
+}
+
+nav a {
+  font-style: italic;
+  font: bold;
+  font-size: 14px;
+  color: #ffffff; /* لون النص في الروابط */
+  text-decoration: none; /* إزالة التزيين الافتراضي للروابط */
+  padding: 5px 10px; /* تحديد المسافة الداخلية للروابط */
+  border-radius: 50px; /* جعل زوايا الروابط مدورة */
+  transition: transform 0.4s ease, background-color 0.3s ease, color 0.3s ease; /* إضافة انتقال سلس عند التغيير */
+  display: inline-block; /* لجعل الرابط يدعم تأثير التكبير */
+}
+
+nav a:hover {
+  background-color: #6f00ff; /* لون الخلفية عند التمرير على الرابط */
+  color: #eca7a7; /* لون النص عند التمرير على الرابط */
+  transform: scale(1.7); /* تكبير الرابط عند التمرير عليه */
+}
+
+/* أنماط المحتوى الرئيسي */
+main {
+  padding: 20px; /* تحديد المسافة الداخلية للمحتوى الرئيسي */
+}
+
+section {
+  display: flex; /* استخدام Flexbox لتنظيم العناصر داخل القسم */
+  flex-wrap: wrap; /* السماح للعناصر بالتفاف حول السطر */
+  gap: 20px; /* تحديد المسافة بين العناصر */
+  justify-content: center; /* محاذاة العناصر في المركز */
+}
+
+div[class*="GK_"],
+div[class*="CB_"],
+div[class*="CM_"],
+div[class*="CF_"] {
+  background-color: #f5e0e0; /* لون خلفية العناصر */
+  border: 1px solid #ddd; /* إضافة حدود خفيفة حول العناصر */
+  border-radius: 8px; /* جعل زوايا العناصر مدورة */
+  box-shadow: 0 4px 8px rgba(61, 42, 42, 0.1); /* إضافة ظل خفيف للعناصر */
+  padding: 20px; /* تحديد المسافة الداخلية للعناصر */
+  width: 280px; /* تحديد عرض العناصر */
+  text-align: center; /* محاذاة النصوص في المركز */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثيرات الانتقال لتكبير العناصر وتغيير الظل */
+}
+
+div[class*="GK_"] img,
+div[class*="CB_"] img,
+div[class*="CM_"] img,
+div[class*="CF_"] img {
+  width: 100px; /* تحديد عرض الصورة داخل العناصر */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  border-radius: 50%; /* جعل الصورة دائرية */
+  margin-bottom: 10px; /* تحديد المسافة بين الصورة والنصوص */
+  transition: transform 0.3s ease; /* تأثير الانتقال لتكبير الصورة */
+}
+
+div[class*="GK_"] img:hover,
+div[class*="CB_"] img:hover,
+div[class*="CM_"] img:hover,
+div[class*="CF_"] img:hover {
+  transform: scale(1.3); /* زيادة حجم الصورة عند التمرير */
+}
+
+div[class*="GK_"]:hover,
+div[class*="CB_"]:hover,
+div[class*="CM_"]:hover,
+div[class*="CF_"]:hover {
+  transform: scale(1.32); /* زيادة حجم العنصر عند التمرير */
+  box-shadow: 0 6px 12px rgba(61, 42, 42, 0.2); /* زيادة حجم الظل عند التمرير */
+}
+
+div[class*="GK_"]:hover h3,
+div[class*="CB_"]:hover h3,
+div[class*="CM_"]:hover h3,
+div[class*="CF_"]:hover h3,
+div[class*="GK_"]:hover p,
+div[class*="CB_"]:hover p,
+div[class*="CM_"]:hover p,
+div[class*="CF_"]:hover p {
+  transform: scale(1.04); /* زيادة حجم النصوص عند التمرير */
+}
+
+/* أنماط الشريط الجانبي */
+#matchesAside {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #d13030;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* إخفاء الشريط الجانبي افتراضيًا */
+  z-index: 1000;
+}
+
+#matchesAside.show {
+  display: block; /* عرض الشريط الجانبي عند إضافة الكلاس show */
+}
+
+/* أنماط الأزرار */
+#toggleAside {
+  background-color: #234975; /* لون خلفية الزر */
+  color: #ffffff; /* لون النص في الزر */
+  border: #ffffff; /* لون الحدود للزر */
+  padding: 10px 20px; /* تحديد المسافة الداخلية للزر */
+  border-radius: 5px; /* جعل زوايا الزر مدورة */
+  cursor: pointer; /* تغيير شكل المؤشر إلى يد عند المرور على الزر */
+  margin: 10px 0; /* تحديد المسافة الخارجية للزر */
+  transition: background-color 0.3s ease, color 0.3s ease; /* تأثيرات الانتقال لتغيير اللون */
+}
+
+#toggleAside:hover {
+  background-color: #8acf8a; /* تغيير لون الخلفية عند التمرير على الزر */
+  color: #234975; /* تغيير لون النص عند التمرير على الزر */
+}
+
+/* أنماط التذييل */
+footer {
+  background-color: #c5bc87; /* لون خلفية التذييل */
+  color: #fff; /* لون النص في التذييل */
+  padding: 20px; /* تحديد المسافة الداخلية للتذييل */
+  text-align: center; /* محاذاة النصوص في المركز */
+  border-top: 0px solid #c5bc87; /* إضافة شريط علوي للتذييل بلون مميز */
+}
+
+footer h3 {
+  margin: 10px 0; /* تحديد المسافة الخارجية للرؤوس */
+  font-size: 22px; /* تحديد حجم خط الرؤوس */
+  color: #fff; /* لون النص في الرؤوس */
+}
+
+footer nav ul {
+  list-style: none; /* إزالة العلامات النقطية من القوائم */
+  padding: 0; /* إزالة التباعد الداخلي للقائمة */
+  margin: 10px 0 0 0; /* تحديد المسافة الخارجية للقائمة */
+}
+
+footer nav li {
+  display: inline; /* عرض العناصر في نفس السطر */
+  margin: 0 10px; /* تحديد المسافة بين العناصر */
+}
+
+footer nav a {
+  width:25%;
+  color: #fff; /* لون النص في الروابط */
+  text-decoration: none; /* إزالة التزيين الافتراضي للروابط */
+  padding: 10px 10px; /* تحديد المسافة الداخلية للروابط */
+  border-radius: 25px; /* جعل زوايا الروابط مدورة */
+}
+
+footer nav a:hover {
+  background-color: #ffcc00; /* تغيير لون الخلفية عند التمرير على الرابط */
+  color: #003d00; /* تغيير لون النص عند التمرير على الرابط */
+}
+
+/* التصميم التفاعلي */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column; /* تغيير اتجاه العناصر إلى عمودي */
+    align-items: center; /* محاذاة العناصر في الوسط */
+  }
+
+  div[class*="GK_"],
+  div[class*="CB_"],
+  div[class*="CM_"],
+  div[class*="CF_"] {
+    width: 100%; /* تحديد عرض العناصر ليشمل كامل الشاشة */
+    max-width: 320px; /* تحديد الحد الأقصى للعرض */
+  }
+
+  aside {
+    width: 100%; /* تحديد عرض الشريط الجانبي ليشمل كامل الشاشة */
+  }
+}
+
+.social-link {
+  color: #3b5998; /* لون أيقونة الفيسبوك */
+  font-size: 24px; /* حجم الأيقونة */
+  margin: 0 10px; /* المسافة بين الأيقونات */
+  transition: color 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
+
+.social-link:hover {
+  color: #8b9dc3; /* تغيير اللون عند التمرير */
+}
